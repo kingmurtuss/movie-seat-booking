@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+
+.screen {
+  background-color: #fff;
+  height: 120px;
+  width: 90%; /* Adjust width as needed */
+  margin: 15px 0;
+  border-top-left-radius: 60% 15px; /* Curving the top-left corner */
+  border-top-right-radius: 60% 15px; /* Curving the top-right corner */
+  border-bottom-left-radius: 40% 15px; /* Curving the bottom-left corner */
+  border-bottom-right-radius: 40% 10px; /* Curving the bottom-right corner */
+  box-shadow: 0px -1px 15px rgba(0, 0, 0, 0.2); /* Adding 3D shadow */
+  transform: perspective(100px) rotateX(-20deg); /* Adding a perspective effect */
+}
+
+
+.row {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center; /* Center items horizontally within the row */
+}
+
+.seat {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 40px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.seat.selected {
+  background-color: #2ecc71;
+}
+
+.seat.sold {
+  background-color: #aaa;
+}
+
+.seat:hover {
+  cursor: pointer;
+  background-color: #bdc3c7;
+}
+
+.showcase {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+}
+
+.showcase li small {
+  margin-left: 5px;
+}
+
+.text {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.text span {
+  color: #2ecc71;
+}
+
+.selected-info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+.selected-count {
+  font-weight: bold;
+  color: #0077ff;
+}
+
+.total-price {
+  font-weight: bold;
+  color: #333;
+}
